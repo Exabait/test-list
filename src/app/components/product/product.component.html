@@ -1,5 +1,5 @@
 <ng-container *ngIf="viewStatus === 'list-view'">
-  <div class="list">
+  <div (click)="chosenProduct.emit(productItem.productId)" class="list">
     <div class="content-block product-id">
       <span>{{productItem.productId}}</span>
     </div>
@@ -17,7 +17,7 @@
               <div class="icon-ig"></div>
             </div>
             <div class="from-created">
-              <span >{{productItem.createdAt | createdDate}} days ago</span>
+              <span >{{productItem.createdAt | createdDate}} Days Ago</span>
             </div>
             <div class="dropship">
               <span >Dropship</span>
@@ -64,7 +64,7 @@
   </div>
 </ng-container>
 <ng-container *ngIf="viewStatus === 'grid-view'">
-  <div class="grid">
+  <div (click)="chosenProduct.emit(productItem.productId)" class="grid">
     <div class="product-image">
       <img [src]="productItem.imagePath" alt="productImage">
     </div>

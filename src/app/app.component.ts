@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
   public productList: Product[] = [];
   public productList$: Observable<Product[]>;
 
+  public activeProductId: string;
+
   constructor(private productsService: ProductsService,
               private store: Store<State>) {
   }
@@ -26,7 +28,11 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(setProducts());
     this.productList$ = this.store.select(getProducts);
+  }
 
+  public onProductClick(event: string): void {
+    this.activeProductId = event;
+    console.log(event);
   }
 
 }

@@ -6,7 +6,9 @@
     <div [ngClass]="{'row': viewStatus === 'grid-view'}">
       <div [ngClass]="{'col-md-3': viewStatus === 'grid-view'}" *ngFor="let product of (productList$ | async)">
         <app-product  [productItem]="product"
-                     [viewStatus]="viewStatus"></app-product>
+                     [viewStatus]="viewStatus"
+                      (chosenProduct)="onProductClick($event)"
+        ></app-product>
       </div>
     </div>
   </div>
