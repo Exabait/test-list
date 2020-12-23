@@ -1,1 +1,13 @@
-App works
+<div class="wrapper">
+  <button (click)="viewStatus = 'list-view'">List view</button>
+  <button (click)="viewStatus = 'grid-view'">Grid view</button>
+
+  <div [ngClass]="{'container': viewStatus === 'grid-view'}">
+    <div [ngClass]="{'row': viewStatus === 'grid-view'}">
+      <div [ngClass]="{'col-md-3': viewStatus === 'grid-view'}" *ngFor="let product of (productList$ | async)">
+        <app-product  [productItem]="product"
+                     [viewStatus]="viewStatus"></app-product>
+      </div>
+    </div>
+  </div>
+</div>

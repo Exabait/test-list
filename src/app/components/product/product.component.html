@@ -1,0 +1,100 @@
+<ng-container *ngIf="viewStatus === 'list-view'">
+  <div class="list">
+    <div class="content-block product-id">
+      <span>{{productItem.productId}}</span>
+    </div>
+    <div class="content-block product-image">
+      <img [src]="productItem.imagePath" alt="productImage">
+    </div>
+    <div class="content-block product-info">
+      <div class="product-description">
+        <div class="description-header">
+          <div class="header-title">
+            <span class="title">{{productItem.title}}</span>
+          </div>
+          <div class="header-icons">
+            <div class="icon-for-ig">
+              <div class="icon-ig"></div>
+            </div>
+            <div class="from-created">
+              <span >{{productItem.createdAt | createdDate}} days ago</span>
+            </div>
+            <div class="dropship">
+              <span >Dropship</span>
+            </div>
+            <div class="cloud-warning">
+              <span class="icon-cloud-warning"></span>
+            </div>
+            <div class="closed-eye">
+              <span class="icon-closed-eye"></span>
+            </div>
+            <div class="settings">
+              <span class="icon-settings"></span>
+            </div>
+          </div>
+        </div>
+        <div class="info-icons">
+          <div>
+            <span class="icon icon-pin"></span>
+            <span class="text-icon">{{productItem.tags}}</span>
+          </div>
+          <div>
+            <span class="icon icon-star"></span>
+            <span class="text-icon">{{productItem.rating}}</span>
+          </div>
+          <div>
+            <span class="icon icon-shield"></span>
+            <span class="text-icon">{{productItem.percentage}}%</span>
+          </div>
+          <div>
+            <span class="icon icon-epack"></span>
+            <span class="text-icon">ePack</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 product-actions row">
+        <p class="col-md-7">${{productItem.price}}</p>
+        <div class="col-md-5">
+          <span class="icon-eye"></span>
+          <span class="icon-heart"></span>
+          <span class="icon-add"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="viewStatus === 'grid-view'">
+  <div class="grid">
+    <div class="product-image">
+      <img [src]="productItem.imagePath" alt="productImage">
+    </div>
+    <div class="separator"></div>
+    <div class="product-info">
+      <span class="title">{{productItem.title}}</span>
+      <span class="price">${{productItem.price}}</span>
+    </div>
+    <div class="separator"></div>
+    <div class="info-icons">
+      <div>
+        <span class="icon-trophy"></span>
+        <span>223</span>
+      </div>
+      <div>
+        <span class="icon-pin"></span>
+        <span>{{productItem.tags}}</span>
+      </div>
+      <div>
+        <span class="icon-star"></span>
+        <span>{{productItem.rating}}</span>
+      </div>
+      <div>
+        <span class="icon-shield"></span>
+        <span>{{productItem.percentage}}</span>
+      </div>
+      <div>
+        <span class="icon-epack"></span>
+        <span>ePack</span>
+      </div>
+    </div>
+  </div>
+</ng-container>

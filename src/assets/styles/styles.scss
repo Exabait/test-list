@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-eye:before {
+  content: "\0049";
+}
+
 .icon-lock:before {
   content: "\0041";
 }
@@ -46,6 +50,33 @@
 .icon-epack:before {
   content: "\0048";
 }
-.icon-eye:before {
-  content: "\0049";
+
+.icon-for-ig {
+  width: 20px;
+  height: 20px;
+  background: url(../fonts/icons/for-ig-icons.svg) no-repeat center center;
+}
+
+.icon-ig {
+  width: 10px;
+  height: 10px;
+  background: url(../fonts/icons/ig-icon.svg) no-repeat center center;
+}
+
+.icon-closed-eye {
+  width: 12px;
+  height: 9px;
+  background: url(../fonts/icons/closed-eye-icon.svg) no-repeat center center;
+}
+
+.icon-cloud-warning {
+  width: 14px;
+  height: 10px;
+  background: url(../fonts/icons/cloud-warning-icon.svg) no-repeat center center;
+}
+
+.icon-settings {
+  width: 10px;
+  height: 10px;
+  background: url(../fonts/icons/settings-icon.svg) no-repeat center center;
 }

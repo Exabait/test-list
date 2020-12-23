@@ -1,0 +1,12 @@
+@import url(../assets/styles/flexboxgrid.min.css);
+
+.wrapper {
+  background-color: #f4f7fb;
+
+  .list-view {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+

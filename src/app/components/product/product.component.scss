@@ -1,0 +1,324 @@
+@import url(../../../assets/styles/flexboxgrid.min.css);
+@import url(../../../assets/styles/styles.scss);
+@import url(../../../assets/styles/fonts.scss);
+
+.list {
+  .content-block {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    height: 130px;
+    background: #fff;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  will-change: transform, height;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1062px;
+  height: 130px;
+  margin: 0 auto 6px;
+  box-sizing: border-box;
+  transition: all .15s linear;
+  position: relative;
+  transform: scale(1);
+
+
+  .product-id {
+    width: 130px;
+
+    span {
+      font-family: Avenir, serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 35px;
+      line-height: 30px;
+
+      color: #888CA9;
+    }
+  }
+
+  .product-image {
+    width: 130px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .product-info {
+    width: 790px;
+    max-height: 130px !important;
+    padding: 31px 40px;
+    box-sizing: border-box;
+    transition: all .15s linear;
+
+    display: flex;
+    justify-content: space-between;
+
+    .product-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+
+      .description-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        padding-top: 15px;
+
+        .header-title {
+          .title {
+            font-family: Avenir, serif;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 25px;
+            letter-spacing: 0.02em;
+
+            display: flex;
+            align-items: center;
+            padding-top: 1px;
+
+            color: #3F4457;
+          }
+        }
+
+        .header-icons {
+          margin-left: 10px;
+          padding-top: 1px;
+          display: flex;
+          justify-content: space-between;
+
+          & > * {
+            margin-left: 2px;
+          }
+
+          .icon-for-ig {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .closed-eye {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 18px;
+            border-radius: 30.6721px;
+            background: #F4EEBD
+          }
+
+          .cloud-warning {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 18px;
+            border-radius: 30.6721px;
+            background: #F7E1E1
+          }
+
+          .settings {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 18px;
+            border-radius: 30.6721px;
+            background: #DBFAFF
+          }
+
+          .from-created {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1px 12px 0;
+            height: 19px;
+
+            background: #F1F2F6;
+            border-radius: 30.6721px;
+            font-family: Avenir, serif;
+            font-weight: 800;
+            font-size: 8px;
+            line-height: 10px;
+
+            color: #A9B0BE;
+          }
+
+          .dropship {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1px 12px 0;
+            height: 19px;
+
+            background: #F2E6FF;
+            border-radius: 30.6721px;
+            font-family: Avenir, serif;
+            font-weight: 800;
+            font-size: 8px;
+            line-height: 10px;
+            letter-spacing: -0.02em;
+
+            color: #8F23FE;
+          }
+        }
+      }
+
+      .info-icons {
+        justify-content: flex-start;
+        padding-bottom: 10px;
+
+        div:not(:last-child) {
+          margin-right: 13px;
+        }
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .text-icon {
+          margin-left: 2px;
+        }
+      }
+    }
+
+    .product-actions {
+      p {
+        font-family: Avenir, serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 36px;
+
+        display: flex;
+        align-items: center;
+
+        color: #0FCB5A;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        span {
+          margin: 10px;
+          color: #D3D6DC;
+          font-weight: 700;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.grid {
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 265px;
+  height: 330px;
+  background: #fff;
+  border-radius: 14px;
+
+  .product-image {
+    display: flex;
+    height: 262px;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    img {
+      width: 182px;
+    }
+  }
+
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 13px;
+
+    .title {
+      font-family: Avenir, serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.01em;
+      color: #3F4457;
+    }
+
+    .price {
+      font-family: Avenir, serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+
+      display: flex;
+      align-items: center;
+      text-align: right;
+      letter-spacing: 0.02em;
+      color: #3F4457;
+    }
+  }
+
+  .info-icons {
+    justify-content: space-between;
+    padding: 7px 13px;
+
+    font-family: Avenir, serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #D3D6DC;
+  }
+
+}
+
+.separator {
+  height: 1px;
+  background-color: #F3F7FA;
+}
+
+.info-icons {
+  display: flex;
+  justify-content: space-between;
+
+  .icon {
+    color: #D3D6DC;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .text-icon {
+    color: #D3D6DC;
+    align-items: center;
+
+    font-family: Avenir, serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+  }
+}
