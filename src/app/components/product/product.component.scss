@@ -163,7 +163,10 @@
     }
 
     .product-actions {
+      margin-left: 5px;
+
       p {
+        padding-left: 15px;
         font-family: Avenir, serif;
         font-weight: 900;
         font-size: 25px;
@@ -181,17 +184,17 @@
         align-items: center;
 
         span {
-          margin: 10px;
+          margin: 5px;
           color: #D3D6DC;
           font-weight: 700;
         }
 
         .icon-eye {
-          font-size: 30px;
+          font-size: 32px;
         }
 
         .icon-heart {
-          font-size: 25px;
+          font-size: 23px;
         }
 
         .icon-add {
