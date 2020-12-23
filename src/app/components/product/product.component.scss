@@ -102,48 +102,30 @@
 
           & > * {
             margin-left: 2px;
-          }
-
-          .icon-for-ig {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          .closed-eye {
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+
+          .closed-eye, .cloud-warning, .settings {
             width: 28px;
             height: 18px;
             border-radius: 30.6721px;
+          }
+
+          .closed-eye {
             background: #F4EEBD
           }
 
           .cloud-warning {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 18px;
-            border-radius: 30.6721px;
             background: #F7E1E1
           }
 
           .settings {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 18px;
-            border-radius: 30.6721px;
             background: #DBFAFF
           }
 
           .from-created {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 1px 12px 0;
             height: 19px;
 
@@ -158,9 +140,6 @@
           }
 
           .dropship {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 1px 12px 0;
             height: 19px;
 
@@ -170,7 +149,6 @@
             font-weight: 800;
             font-size: 8px;
             line-height: 10px;
-            letter-spacing: -0.02em;
 
             color: #8F23FE;
           }
