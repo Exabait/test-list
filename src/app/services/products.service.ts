@@ -11,6 +11,6 @@ export class ProductsService {
   constructor(private http: HttpClient) { }
 
   public getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(`http://localhost:4200/api/products`);
+    return this.http.get<Product[]>(`http://test-list-server.eu-4.evennode.com/api/products`);
   }
 }
